@@ -1,0 +1,5 @@
+{
+        "scripts": {
+        "build:css": "postcss web/app/themes/wp_hoops/src/tailwind.css -o web/app/themes/wp_hoops/style.css"
+      }
+}
