@@ -23,7 +23,8 @@
 
 $context = Timber::context();
 
+$context['conferences'] = new Timber('eastern-conference');
+
 $timber_post     = new Timber\Post();
-$context['sidebar'] = Timber::get_sidebar('sidebar.php');
 $context['post'] = $timber_post;
 Timber::render( array( 'pages/' . $timber_post->post_name . '.twig', 'page.twig' ), $context );

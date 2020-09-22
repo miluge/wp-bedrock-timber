@@ -15,7 +15,7 @@
 
 $context          = Timber::context();
 $context['posts'] = new Timber\PostQuery();
-$context['foo']   = 'bar';
+$context['sidebar'] = Timber::get_sidebar('sidebar.php');
 $templates        = array( 'index.twig' );
 if ( is_home() ) {
 	array_unshift( $templates, 'front-page.twig', 'home.twig' );
