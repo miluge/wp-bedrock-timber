@@ -19,7 +19,9 @@
             </div>
           </div>
     {% endif %}
-
+    <div class="w-full flex justify-center font-bold sm:justify-start items-center pb-2">
+      <h2 class="text-2xl">Featured news</h2>
+    </div>
 
     {% if post.meta('featured_news') %}
         {% set feat = post.meta('featured_news') %}
@@ -42,7 +44,9 @@
         {% endfor %}
     </div>
     {% endif %}
-
+<div class="w-full flex justify-center font-bold sm:justify-start items-center">
+  <h2 class="text-2xl">Latest news</h2>
+</div>
     {% for post in posts %}
 
     <div class="w-full lg:flex mb-6 pt-4">
@@ -62,7 +66,7 @@
         </div>
       </div>
     </div>
-    
-    {% endfor %}
 
+    {% endfor %}
+  {% include 'components/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %}
  {% endblock %}
