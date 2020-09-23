@@ -22,7 +22,13 @@
  */
 
 $context = Timber::context();
+$query = array(
+    'post_type' => 'post',
+    'order_by' => 'ID',
+    'category-name' => 'news'
+);
 
+$context['posts'] = new Timber\PostQuery($query);
 $timber_post     = new Timber\Post();
 $context['sidebar'] = Timber::get_sidebar('sidebar.php');
 $context['post'] = $timber_post;

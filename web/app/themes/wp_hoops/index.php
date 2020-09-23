@@ -14,7 +14,15 @@
  */
 
 $context          = Timber::context();
-$context['posts'] = new Timber\PostQuery();
+$query = array(
+    'post_type' => 'post',
+	'order_by' => 'ID',
+	'category_name' => 'news'
+	'order' => 'DESC'
+	'posts_per_page' => '4'
+);
+
+$context['posts'] = new Timber\PostQuery($query);
 $context['sidebar'] = Timber::get_sidebar('sidebar.php');
 $templates        = array( 'index.twig' );
 if ( is_home() ) {
