@@ -48,6 +48,7 @@
   <h2 class="text-2xl">Latest news</h2>
 </div>
     {% for post in posts %}
+    
 
     <div class="w-full lg:flex mb-6 pt-4">
       <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('{{ post.thumbnail.src }}')" title="Woman holding a mug">
@@ -68,5 +69,4 @@
     </div>
 
     {% endfor %}
-  {% include 'components/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %}
  {% endblock %}

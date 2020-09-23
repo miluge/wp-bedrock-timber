@@ -21,10 +21,15 @@
  * @since    Timber 0.1
  */
 
+    
 $context = Timber::context();
 
-$context['conferences'] = new Timber('western-conference');
-
+$query = array(
+    'numberposts' => -1,
+    'post_type' => 'west',
+);
+$context['term'] = new Timber\Term(126);
+$context['teams'] = new Timber\PostQuery($query);
 $timber_post     = new Timber\Post();
 $context['post'] = $timber_post;
 Timber::render( array( 'pages/' . $timber_post->post_name . '.twig', 'page.twig' ), $context );

@@ -1,0 +1,12 @@
+{% extends 'base.twig' %}
+
+{% block content %}
+
+
+{% for team in teams %}
+<img src="{{ post.thumbnail.src}}" alt="" srcset="">
+<p>{{ team.post_title }}</p> 
+
+{% endfor %}
+
+{% endblock content %}

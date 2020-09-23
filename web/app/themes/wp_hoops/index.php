@@ -22,7 +22,7 @@ $query = array(
 	'posts_per_page' => '4'
 );
 
-$context['posts'] = new Timber\PostQuery($query);
+// $context['posts'] = new Timber\PostQuery($query);
 $context['sidebar'] = Timber::get_sidebar('sidebar.php');
 $templates        = array( 'index.twig' );
 if ( is_home() ) {

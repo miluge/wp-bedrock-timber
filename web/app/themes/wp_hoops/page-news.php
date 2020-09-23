@@ -20,12 +20,18 @@
  * @subpackage  Timber
  * @since    Timber 0.1
  */
+global $paged;
+	if (!isset($paged) || !$paged){
+		$paged = 1;
+    }
 
 $context = Timber::context();
 $query = array(
     'post_type' => 'post',
     'order_by' => 'ID',
     'order' => 'DESC',
+    'posts_per_page' => '10',
+    'paged' => $paged
 );
 
 $context['posts'] = new Timber\PostQuery($query);
