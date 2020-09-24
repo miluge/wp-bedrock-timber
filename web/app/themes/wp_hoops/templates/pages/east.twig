@@ -1,12 +1,10 @@
-{% extends 'base.twig' %}
+{% extends 'base404.twig' %}
 
 {% block content %}
 
+<div class="py-24 flex justify-center">
+    <img class="" src="{{ site.theme.link }}/images/DUg1.gif" alt="" srcset=""> 
+</div>
 
-{% for team in teams %}
-<img src="{{ post.thumbnail.src}}" alt="" srcset="">
-<p>{{ team.post_title }}</p> 
-
-{% endfor %}
 
 {% endblock content %}

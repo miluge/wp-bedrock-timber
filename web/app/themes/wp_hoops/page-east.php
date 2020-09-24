@@ -32,4 +32,4 @@ $context['term'] = new Timber\Term(126);
 $context['teams'] = new Timber\PostQuery($query);
 $timber_post     = new Timber\Post();
 $context['post'] = $timber_post;
-Timber::render( array( 'pages/' . $timber_post->post_name . '.twig', 'page.twig' ), $context );
+Timber::render( 'pages/east.twig', $context );

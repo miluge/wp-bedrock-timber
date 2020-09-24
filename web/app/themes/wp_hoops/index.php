@@ -19,10 +19,10 @@ $query = array(
 	'order_by' => 'ID',
 	'category_name' => 'news'
 	'order' => 'DESC'
-	'posts_per_page' => '4'
+	'posts_per_page' => 3
 );
 
-// $context['posts'] = new Timber\PostQuery($query);
+$context['posts'] = new Timber\PostQuery($query);
 $context['sidebar'] = Timber::get_sidebar('sidebar.php');
 $templates        = array( 'index.twig' );
 if ( is_home() ) {

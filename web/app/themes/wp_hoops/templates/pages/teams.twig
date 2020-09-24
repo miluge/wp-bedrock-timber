@@ -1,10 +1,7 @@
 {% extends 'base.twig' %}
 
 {% block content %}
-<ul>hola
-    <pre>
-        {{ dump(posts) }}
-    </pre>
+<ul>
     {% for team in posts %}
         <li><img src="{{ conference.thumbnail.src }}" alt="">{{ team.title }}</li>
     {% endfor %}
