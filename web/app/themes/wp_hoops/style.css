@@ -10995,6 +10995,10 @@ video {
   font-size: 4rem;
 }
 
+.text-7xl {
+  font-size: 10rem;
+}
+
 .leading-3 {
   line-height: .75rem;
 }
