@@ -1,73 +1,86 @@
 {% extends "base.twig" %}
 
 {% block content %}
-<div>
+    <div>
     {% if post.meta('top_story') %}
         {% set top = post.meta('top_story') %}
         <div class="bg-white overflow-hidden w-full shadow mb-6 mt-4 rounded-lg">
-            <img src="{{ top.thumbnail.src }}" alt="People" class="w-full object-cover object-top h-32 sm:h-48 md:h-64 rounded-t-lg">
+            <img src="{{ top.thumbnail.src }}" alt="People"
+                 class="w-full object-cover object-top h-32 sm:h-48 md:h-64 rounded-t-lg">
             <div class="p-4 md:p-6 group hover:bg-red-600">
-              <p class="text-blue-500 group-hover:text-white font-semibold text-xs mb-1 leading-none">{{ top.category}}</p>
-              <a  href="{{ top.link }}" class="font-semibold mb-4 pb-4 text-xl leading-tight sm:leading-normal group-hover:text-white">{{ top.title }}</a>
-              <div class="text-sm flex items-center pt-2 sm:pt-4">
-                <svg class="opacity-75 mr-2 fill-current group-hover:text-white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="12" height="12" viewBox="0 0 97.16 97.16" style="enable-background:new 0 0 97.16 97.16;" xml:space="preserve">
+                <p class="text-blue-500 group-hover:text-white font-semibold text-xs mb-1 leading-none">{{ top.category }}</p>
+                <a href="{{ top.link }}"
+                   class="font-semibold mb-4 pb-4 text-xl leading-tight sm:leading-normal group-hover:text-white">{{ top.title }}</a>
+                <div class="text-sm flex items-center pt-2 sm:pt-4">
+                    <svg class="opacity-75 mr-2 fill-current group-hover:text-white" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="12"
+                         height="12" viewBox="0 0 97.16 97.16" style="enable-background:new 0 0 97.16 97.16;"
+                         xml:space="preserve">
                   <path d="M48.58,0C21.793,0,0,21.793,0,48.58s21.793,48.58,48.58,48.58s48.58-21.793,48.58-48.58S75.367,0,48.58,0z M48.58,86.823    c-21.087,0-38.244-17.155-38.244-38.243S27.493,10.337,48.58,10.337S86.824,27.492,86.824,48.58S69.667,86.823,48.58,86.823z"/>
-                  <path d="M73.898,47.08H52.066V20.83c0-2.209-1.791-4-4-4c-2.209,0-4,1.791-4,4v30.25c0,2.209,1.791,4,4,4h25.832    c2.209,0,4-1.791,4-4S76.107,47.08,73.898,47.08z"/>
+                        <path d="M73.898,47.08H52.066V20.83c0-2.209-1.791-4-4-4c-2.209,0-4,1.791-4,4v30.25c0,2.209,1.791,4,4,4h25.832    c2.209,0,4-1.791,4-4S76.107,47.08,73.898,47.08z"/>
                 </svg>
-                <p class="leading-none group-hover:text-white">{{ top.date }}</p>
-              </div>
+                    <p class="leading-none group-hover:text-white">{{ top.date }}</p>
+                </div>
             </div>
-          </div>
+        </div>
     {% endif %}
     <div class="w-full flex justify-center font-bold sm:justify-start items-center pb-2">
-      <h2 class="text-2xl">Featured news</h2>
+        <h2 class="text-2xl">Featured news</h2>
     </div>
 
     {% if post.meta('featured_news') %}
         {% set feat = post.meta('featured_news') %}
-    <div class="flex -mr-2 -ml-2 mb-6">
-        {% for news in feat %}
-        <div class="bg-white overflow-hidden w-1/4 m-2 shadow-lg rounded-lg group hover:bg-red-600">
-            <img src="{{ news.thumbnail.src }}" alt="People" class="w-full object-cover h-32 sm:h-48 md:h-64 rounded-t-lg">
-            <div class="p-4 md:p-6 group-hover:text-white">
-              <p class="text-blue-500 font-semibold text-xs mb-1 leading-none group-hover:text-white">{{ news.category }}</p>
-              <a href="{{ news.link }}" class="font-semibold mb-2 text-xl leading-tight sm:leading-normal group-hover:text-white">{{ news.title }}</a>
-              <div class="text-sm flex items-center pt-2 sm:pt-4">
-                <svg class="opacity-75 mr-2 fill-current  group:hover:text-white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="12" height="12" viewBox="0 0 97.16 97.16" style="enable-background:new 0 0 97.16 97.16;" xml:space="preserve">
+        <div class="flex -mr-2 -ml-2 mb-6">
+            {% for news in feat %}
+                <div class="bg-white overflow-hidden w-1/4 m-2 shadow-lg rounded-lg group hover:bg-red-600">
+                    <img src="{{ news.thumbnail.src }}" alt="People"
+                         class="w-full object-cover h-32 sm:h-48 md:h-64 rounded-t-lg">
+                    <div class="p-4 md:p-6 group-hover:text-white">
+                        <p class="text-blue-500 font-semibold text-xs mb-1 leading-none group-hover:text-white">{{ news.category }}</p>
+                        <a href="{{ news.link }}"
+                           class="font-semibold mb-2 text-xl leading-tight sm:leading-normal group-hover:text-white">{{ news.title }}</a>
+                        <div class="text-sm flex items-center pt-2 sm:pt-4">
+                            <svg class="opacity-75 mr-2 fill-current  group:hover:text-white"
+                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 version="1.1" id="Capa_1" x="0px" y="0px" width="12" height="12"
+                                 viewBox="0 0 97.16 97.16" style="enable-background:new 0 0 97.16 97.16;"
+                                 xml:space="preserve">
                   <path d="M48.58,0C21.793,0,0,21.793,0,48.58s21.793,48.58,48.58,48.58s48.58-21.793,48.58-48.58S75.367,0,48.58,0z M48.58,86.823    c-21.087,0-38.244-17.155-38.244-38.243S27.493,10.337,48.58,10.337S86.824,27.492,86.824,48.58S69.667,86.823,48.58,86.823z"/>
-                  <path d="M73.898,47.08H52.066V20.83c0-2.209-1.791-4-4-4c-2.209,0-4,1.791-4,4v30.25c0,2.209,1.791,4,4,4h25.832    c2.209,0,4-1.791,4-4S76.107,47.08,73.898,47.08z"/>
+                                <path d="M73.898,47.08H52.066V20.83c0-2.209-1.791-4-4-4c-2.209,0-4,1.791-4,4v30.25c0,2.209,1.791,4,4,4h25.832    c2.209,0,4-1.791,4-4S76.107,47.08,73.898,47.08z"/>
                 </svg>
-                <p class="leading-none group-hover:text-white">{{ news.date }}</p>
-              </div>
-            </div>
-          </div>
-        {% endfor %}
-    </div>
+                            <p class="leading-none group-hover:text-white">{{ news.date }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
     {% endif %}
-<div class="w-full flex justify-center font-bold sm:justify-start items-center">
-  <h2 class="text-2xl">Latest news</h2>
-</div>
+    <div class="w-full flex justify-center font-bold sm:justify-start items-center">
+        <h2 class="text-2xl">Latest news</h2>
+    </div>
 
     {% for post in posts %}
-    
 
-    <div class="w-full lg:flex mb-6 pt-4 shadow-lg">
-      <div class="h-48 lg:h-auto lg:w-48 flex-none bg-center  object-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('{{ post.thumbnail.src }}')" title="Woman holding a mug">
-      </div>
-      <div class="group hover:bg-red-600 rounded-r-lg p-4 flex flex-col justify-between leading-normal">
-        <div class="mb-8">
-          <a href="{{ post.link }}"class="text-black font-bold text-xl mb-2 group-hover:text-white">{{ post.post_title }}</a>
-          <p class="text-grey-darker text-base pt-6 group-hover:text-white">{{ post.content|excerpt(50)}}</p>
+
+        <div class="w-full lg:flex mb-6 pt-4 shadow-lg">
+            <div class="h-48 lg:h-auto lg:w-48 flex-none bg-center  object-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+                 style="background-image: url('{{ post.thumbnail.src }}')" title="Woman holding a mug">
+            </div>
+            <div class="group hover:bg-red-600 rounded-r-lg p-4 flex flex-col justify-between leading-normal">
+                <div class="mb-8">
+                    <a href="{{ post.link }}"
+                       class="text-black font-bold text-xl mb-2 group-hover:text-white">{{ post.post_title }}</a>
+                    <p class="text-grey-darker text-base pt-6 group-hover:text-white">{{ post.content|excerpt(50) }}</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="text-sm">
+                        <p class="text-blue-500 font-semibold text-xs mb-1 leading-none pb-2 group-hover:text-white">{{ post.category }}</p>
+                        <p class="text-black leading-none pb-2 group-hover:text-white">{{ post.author }}</p>
+                        <p class="text-grey-dark group-hover:text-white">{{ post.date }}</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="flex items-center">
-          <div class="text-sm">
-            <p class="text-blue-500 font-semibold text-xs mb-1 leading-none pb-2 group-hover:text-white">{{ post.category }}</p>
-            <p class="text-black leading-none pb-2 group-hover:text-white">{{ post.author }}</p>
-            <p class="text-grey-dark group-hover:text-white">{{ post.date }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
 
     {% endfor %}
- {% endblock %}
+{% endblock %}
