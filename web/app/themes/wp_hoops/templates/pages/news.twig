@@ -31,7 +31,7 @@
 <nav class="pagination-block flex justify-center w-full">
     <ul class="pagination flex">
 
-        {# First 
+        {# First #}
         {% if posts.pagination.pages|first and posts.pagination.pages|first.current != true %}
             <li class="first btn mr-4">
                 <a  class="text-gray-600 p-2 border-lg border-color-gray-600
@@ -41,7 +41,7 @@
             <li class="first btn disabled hidden mr-4">
                 <button disabled>First</button>
             </li>
-        {% endif %}#}
+        {% endif %}
 
         {# Previous #}
         {% if posts.pagination.prev %}
@@ -80,7 +80,7 @@
             </li>
         {% endif %}
 
-        {# Last 
+        {# Last #}
         {% if posts.pagination.pages|last and posts.pagination.pages|last.current != true %}
             <li class="last btn mr-4">
                 <a  class="text-gray-600 p-2 border-lg border-color-gray-600
@@ -90,7 +90,7 @@
             <li class="last btn disabled hidden mr-4">
                 <button disabled>Last</button>
             </li>
-        {% endif %}#}
+        {% endif %}
 
     </ul>
 </nav>
