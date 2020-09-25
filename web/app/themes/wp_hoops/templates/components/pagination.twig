@@ -27,7 +27,7 @@
             {% endif %}
 
             {# Pages #}
-            {% for page in posts.pagination.pages %}
+            {% for page in posts.pagination.pages|slice(0, 6) %}
                 {% if page.link %}
                     <li class=" mr-4">
                         <a  class="text-gray-600 p-2 border-lg border-color-gray-600

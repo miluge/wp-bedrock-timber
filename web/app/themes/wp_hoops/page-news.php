@@ -30,7 +30,7 @@ $query = array(
     'post_type' => 'post',
     'order_by' => 'ID',
     'order' => 'DESC',
-    'posts_per_page' => '10',
+    'posts_per_page' => 10,
     'paged' => $paged
 );
 

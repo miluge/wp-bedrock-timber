@@ -26,11 +26,12 @@
 
 {% endfor %}
 
+
 {% if posts.pagination.pages is not empty %}
-<nav class="pagination-block flex justify-center">
+<nav class="pagination-block flex justify-center w-full">
     <ul class="pagination flex">
 
-        {# First #}
+        {# First 
         {% if posts.pagination.pages|first and posts.pagination.pages|first.current != true %}
             <li class="first btn mr-4">
                 <a  class="text-gray-600 p-2 border-lg border-color-gray-600
@@ -40,26 +41,25 @@
             <li class="first btn disabled hidden mr-4">
                 <button disabled>First</button>
             </li>
-        {% endif %}
+        {% endif %}#}
 
         {# Previous #}
         {% if posts.pagination.prev %}
-            <li class="prev btn mr-4">
-                <a  class="text-gray-600 p-2 border-lg border-color-gray-600
+            <li class="prev btn mr-2">
+                <a  class="text-gray-600 p-0  md:p-2 border-lg border-color-gray-600
                 " href="{{ posts.pagination.prev.link }}">Previous</a>
             </li>
         {% else %}
-            <li class="prev btn disabled hidden mr-4">
+            <li class="prev btn disabled hidden mr-2">
                 <button disabled>Previous</button>
             </li>
         {% endif %}
-
         {# Pages #}
         {% for page in posts.pagination.pages %}
             {% if page.link %}
-                <li class=" mr-4">
-                    <a  class="text-gray-600 p-2 border-lg border-color-gray-600
-                    " href="{{ page.link }}" class="{{ page.class }}">{{ page.title }}</a>
+                <li class=" mr-2">
+                    <a  class="text-gray-600 p-0  md:p-2 border-lg border-color-gray-600
+                    " href="{{ page.link }}">{{ page.title }}</a>
                 </li>
             {% else %}
                 <li class="current mr-4">
@@ -70,8 +70,8 @@
 
         {# Next #}
         {% if posts.pagination.next %}
-            <li class="next btn mr-4">
-                <a  class="text-gray-600 p-2 border-lg border-color-gray-600
+            <li class="next btn mr-2">
+                <a  class="text-gray-600 p-0 md:p-2 border-lg border-color-gray-600
                 " href="{{ posts.pagination.next.link }}">Next</a>
             </li>
         {% else %}
@@ -80,7 +80,7 @@
             </li>
         {% endif %}
 
-        {# Last #}
+        {# Last 
         {% if posts.pagination.pages|last and posts.pagination.pages|last.current != true %}
             <li class="last btn mr-4">
                 <a  class="text-gray-600 p-2 border-lg border-color-gray-600
@@ -90,7 +90,7 @@
             <li class="last btn disabled hidden mr-4">
                 <button disabled>Last</button>
             </li>
-        {% endif %}
+        {% endif %}#}
 
     </ul>
 </nav>
