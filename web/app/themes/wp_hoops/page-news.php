@@ -38,6 +38,7 @@ $query = array(
 );
 
 $context['posts'] = new Timber\PostQuery($query);
+//Limit pagination items ( 1, 2, 3 ... 19 )
 $context['posts']->pagination(array ('mid_size'=>1));
 $timber_post     = new Timber\Post();
 $context['sidebar'] = Timber::get_sidebar('sidebar.php');
