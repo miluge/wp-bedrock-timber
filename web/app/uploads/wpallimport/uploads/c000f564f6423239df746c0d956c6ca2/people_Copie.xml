@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<name><![CDATA[Golden State Warriors]]></name>
+		<prefix_1><![CDATA[gs]]></prefix_1>
+		<prefix_2><![CDATA[golden-state-warriors]]></prefix_2>
+		<conferences><![CDATA[Western conference]]></conferences>
+	</node>
+	<node>
+		<name><![CDATA[Los Angeles Clippers]]></name>
+		<prefix_1><![CDATA[lac]]></prefix_1>
+		<prefix_2><![CDATA[los-angeles-clippers]]></prefix_2>
+		<conferences><![CDATA[Western conference]]></conferences>
+	</node>
+	<node>
+		<name><![CDATA[Los Angeles Lakers]]></name>
+		<prefix_1><![CDATA[lal]]></prefix_1>
+		<prefix_2><![CDATA[los-angeles-lakers]]></prefix_2>
+		<conferences><![CDATA[Western conference]]></conferences>
+	</node>
+	<node>
+		<name><![CDATA[Phoenix Suns]]></name>
+		<prefix_1><![CDATA[phx]]></prefix_1>
+		<prefix_2><![CDATA[phoenix-suns]]></prefix_2>
+		<conferences><![CDATA[Western conference]]></conferences>
+	</node>
+	<node>
+		<name><![CDATA[Sacramento Kings]]></name>
+		<prefix_1><![CDATA[sac]]></prefix_1>
+		<prefix_2><![CDATA[sacramento-kings]]></prefix_2>
+		<conferences><![CDATA[Western conference]]></conferences>
+	</node>
+	<node>
+		<name><![CDATA[Dallas Mavericks]]></name>
+		<prefix_1><![CDATA[dal]]></prefix_1>
+		<prefix_2><![CDATA[dallas-mavericks]]></prefix_2>
+		<conferences><![CDATA[Western conference]]></conferences>
+	</node>
+	<node>
+		<name><![CDATA[Houston Rockets]]></name>
+		<prefix_1><![CDATA[hou]]></prefix_1>
+		<prefix_2><![CDATA[houston-rockets]]></prefix_2>
+		<conferences><![CDATA[Western conference]]></conferences>
+	</node>
+	<node>
+		<name><![CDATA[Memphis Grizzlies]]></name>
+		<prefix_1><![CDATA[mem]]></prefix_1>
+		<prefix_2><![CDATA[memphis-grizzlies]]></prefix_2>
+		<conferences><![CDATA[Western conference]]></conferences>
+	</node>
+	<node>
+		<name><![CDATA[New Orleans Pelicans]]></name>
+		<prefix_1><![CDATA[no]]></prefix_1>
+		<prefix_2><![CDATA[new-orleans-pelicans]]></prefix_2>
+		<conferences><![CDATA[Western conference]]></conferences>
+	</node>
+	<node>
+		<name><![CDATA[San Antonio Spurs]]></name>
+		<prefix_1><![CDATA[sa]]></prefix_1>
+		<prefix_2><![CDATA[san-antonio-spurs]]></prefix_2>
+		<conferences><![CDATA[Western conference]]></conferences>
+	</node>
+	<node>
+		<name><![CDATA[Orlando Magic]]></name>
+		<prefix_1><![CDATA[orl]]></prefix_1>
+		<prefix_2><![CDATA[orlando-magic]]></prefix_2>
+		<conferences><![CDATA[]]></conferences>
+	</node>
+	<node>
+		<name><![CDATA[Denver Nuggets]]></name>
+		<prefix_1><![CDATA[den]]></prefix_1>
+		<prefix_2><![CDATA[denver-nuggets]]></prefix_2>
+		<conferences><![CDATA[Western conference]]></conferences>
+	</node>
+	<node>
+		<name><![CDATA[Minnesota Timberwolves]]></name>
+		<prefix_1><![CDATA[min]]></prefix_1>
+		<prefix_2><![CDATA[minnesota-timberwolves]]></prefix_2>
+		<conferences><![CDATA[Western conference]]></conferences>
+	</node>
+	<node>
+		<name><![CDATA[Oklahoma City Thunder]]></name>
+		<prefix_1><![CDATA[okc]]></prefix_1>
+		<prefix_2><![CDATA[oklahoma-city-thunder]]></prefix_2>
+		<conferences><![CDATA[Western conference]]></conferences>
+	</node>
+	<node>
+		<name><![CDATA[Portland Trail Blazers]]></name>
+		<prefix_1><![CDATA[por]]></prefix_1>
+		<prefix_2><![CDATA[portland-trail-blazers]]></prefix_2>
+		<conferences><![CDATA[Western conference]]></conferences>
+	</node>
+	<node>
+		<name><![CDATA[Utah Jazz]]></name>
+		<prefix_1><![CDATA[uta]]></prefix_1>
+		<prefix_2><![CDATA[utah-jazz]]></prefix_2>
+		<conferences><![CDATA[Western conference]]></conferences>
+	</node>
+</data>

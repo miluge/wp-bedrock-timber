@@ -1,0 +1,31 @@
+﻿name,prefix_1,prefix_2,conferences
+Boston Celtics,bos,boston-celtics,Eastern conference
+Brooklyn Nets,bkn,brooklyn-nets,Eastern conference
+New York Knicks,ny,new-york-knicks,Eastern conference
+Philadelphia 76ers,phi,philadelphia-76ers,Eastern conference
+Toronto Raptors,tor,toronto-raptors,Eastern conference
+Golden State Warriors,gs,golden-state-warriors,Western conference
+Los Angeles Clippers,lac,los-angeles-clippers,Western conference
+Los Angeles Lakers,lal,los-angeles-lakers,Western conference
+Phoenix Suns,phx,phoenix-suns,Western conference
+Sacramento Kings,sac,sacramento-kings,Western conference
+Chicago Bulls,chi,chicago-bulls,Eastern conference
+Cleveland Cavaliers,cle,cleveland-cavaliers,Eastern conference
+Detroit Pistons,det,detroit-pistons,Eastern conference
+Indiana Pacers,ind,indiana-pacers,Eastern conference
+Milwaukee Bucks,mil,milwaukee-bucks,Eastern conference
+Dallas Mavericks,dal,dallas-mavericks,Western conference
+Houston Rockets,hou,houston-rockets,Western conference
+Memphis Grizzlies,mem,memphis-grizzlies,Western conference
+New Orleans Pelicans,no,new-orleans-pelicans,Western conference
+San Antonio Spurs,sa,san-antonio-spurs,Western conference
+Atlanta Hawks,atl,atlanta-hawks,Eastern conference
+Charlotte Hornets,cha,charlotte-hornets,Eastern conference
+Miami Heat,mia,miami-heat,Eastern conference,Eastern conference
+Orlando Magic,orl,orlando-magic,,Western conference
+Washington Wizards,wsh,washington-wizards,Eastern conference
+Denver Nuggets,den,denver-nuggets,Western conference
+Minnesota Timberwolves,min,minnesota-timberwolves,Western conference
+Oklahoma City Thunder,okc,oklahoma-city-thunder,Western conference
+Portland Trail Blazers,por,portland-trail-blazers,Western conference
+Utah Jazz,uta,utah-jazz,Western conference
