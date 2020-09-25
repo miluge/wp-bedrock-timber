@@ -20,6 +20,9 @@
  * @subpackage  Timber
  * @since    Timber 0.1
  */
+
+use Timber\Pagination;
+
 global $paged;
 	if (!isset($paged) || !$paged){
 		$paged = 1;
@@ -35,6 +38,7 @@ $query = array(
 );
 
 $context['posts'] = new Timber\PostQuery($query);
+$context['posts']->pagination(array ('mid_size'=>1));
 $timber_post     = new Timber\Post();
 $context['sidebar'] = Timber::get_sidebar('sidebar.php');
 $context['post'] = $timber_post;
