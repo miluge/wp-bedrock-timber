@@ -26,9 +26,9 @@ $context = Timber::context();
 
 $query = array(
     'numberposts' => -1,
-    'post_type' => 'services',
+    'post_type' => 'teams',
 );
 $context['teams'] = new Timber\PostQuery($query);
 $timber_post     = new Timber\Post();
 $context['post'] = $timber_post;
-Timber::render( 'pages/nos-services.twig', $context );
+Timber::render( 'pages/east.twig', $context );
